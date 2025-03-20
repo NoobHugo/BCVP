@@ -1,6 +1,5 @@
 ﻿using BCVP.Model;
 using BCVP.Service;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BCVP.Controllers
@@ -10,9 +9,9 @@ namespace BCVP.Controllers
     public class UserController : ControllerBase
     {
         [HttpGet]
-        public async Task<List<UserVo>> Get()
+        public async Task<List<User>> Get()
         {
-            var userService = new UserService();
+            var userService = new BaseService<User, UserVo>();
             return await userService.Query();
         }
     }
