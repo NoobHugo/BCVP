@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BCVP.IService\BCVP.IService.csproj" />
     <ProjectReference Include="..\BCVP.Service\BCVP.Service.csproj" />
   </ItemGroup>
 

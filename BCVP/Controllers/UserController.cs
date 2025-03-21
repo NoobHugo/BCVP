@@ -1,19 +1,18 @@
 ﻿using AutoMapper;
+using BCVP.IService;
 using BCVP.Model;
 using BCVP.Service;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BCVP.Controllers
+namespace BCVP.Controllers;
+
+[Route("api/[controller]")]
+[ApiController]
+public class UserController(IBaseService<User,UserVo> userService) : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class UserController(IMapper mapper) : ControllerBase
+    [HttpGet]
+    public async Task<List<UserVo>> Get()
     {
-        [HttpGet]
-        public async Task<List<UserVo>> Get()
-        {
-            var userService = new BaseService<User, UserVo>(mapper);
-            return await userService.Query();
-        }
+        return await userService.Query();
     }
 }

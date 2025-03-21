@@ -1,14 +1,6 @@
-﻿using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace BCVP.IService;
 
-namespace BCVP.IService
+public interface IBaseService<TEntity, TVo> where TEntity : class where TVo : class
 {
-    public interface IBaseService<TEntity, TVo> where TEntity : class where TVo : class
-    {
-        Task<List<TVo>> Query();
-    }
+    Task<List<TVo>> Query();
 }
