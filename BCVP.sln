@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCVP.IService", "BCVP.IServ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCVP.Service", "BCVP.Service\BCVP.Service.csproj", "{4ED596F6-6C4D-4EA4-873B-CD4393C12BA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCVP.Extension", "BCVP.Extension\BCVP.Extension.csproj", "{0BFB6AD4-1432-4597-A25E-0C55F1F1B097}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{4ED596F6-6C4D-4EA4-873B-CD4393C12BA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4ED596F6-6C4D-4EA4-873B-CD4393C12BA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4ED596F6-6C4D-4EA4-873B-CD4393C12BA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BFB6AD4-1432-4597-A25E-0C55F1F1B097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BFB6AD4-1432-4597-A25E-0C55F1F1B097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BFB6AD4-1432-4597-A25E-0C55F1F1B097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BFB6AD4-1432-4597-A25E-0C55F1F1B097}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

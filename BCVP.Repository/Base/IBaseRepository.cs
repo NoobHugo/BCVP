@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BCVP.Repository.Base;
+﻿namespace BCVP.Repository.Base;
 
 public interface IBaseRepository<TEntity> where TEntity : class
 {

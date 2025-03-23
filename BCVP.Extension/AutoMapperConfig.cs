@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace BCVP;
+namespace BCVP.Extension;
 
 public class AutoMapperConfig
 {
